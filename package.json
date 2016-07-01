@@ -1,0 +1,11 @@
+{
+  "name": "exec-with-verify",
+  "version": "1.0.0",
+  "description": "asyncronously exec child processes and verify that a string is printed to stdout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bellingson",
+  "license": "MIT"
+}
