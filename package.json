@@ -1,6 +1,6 @@
 {
   "name": "exec-with-verify",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "asyncronously exec child processes and verify that a string is printed to stdout",
   "main": "index.js",
   "repository": {
