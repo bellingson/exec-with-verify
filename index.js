@@ -56,10 +56,16 @@ exports.execWithVerify = function(args) {
 
 };
 
-exports.execSync = function(cmd, cwd) {
+exports.execSync = function(cmd, cwd, timeout) {
 
     var _exec = require('child_process').execSync;
-    var buffer = _exec( cmd, {cwd: cwd});
+
+	var options = {cwd: cwd};
+	if(timeout) {
+		options.timeout = timeout;
+	}
+
+    var buffer = _exec( cmd, options);
 
     var StringDecoder = require('string_decoder').StringDecoder;
     var decoder = new StringDecoder('utf-8');
